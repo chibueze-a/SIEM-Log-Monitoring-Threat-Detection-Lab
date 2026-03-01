@@ -21,7 +21,6 @@ The objective was to move beyond simple log ingestion and instead focus on multi
 This lab includes multiple custom detections, attack simulations (brute force, PowerShell execution, suspicious outbound network activity, and LSASS credential access), and an end-to-end incident investigation with documented findings.
 
 The focus of this project was detection engineering and log analysis, not solely generating alerts, but understanding the underlying telemetry, validating signal quality, and mapping activity to MITR ATT&CK techniques. 
-
 ---
 
 ## Lab Architecture
