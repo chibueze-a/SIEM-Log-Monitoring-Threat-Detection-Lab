@@ -136,6 +136,8 @@ The objective was to replicate common adversary behaviors across multiple stages
 
 Multiple authentication attempts were generated against the Windows host to trigger failed login events (Event ID 4625). This activity was used to validate threshold-based brute force detection logic.
 
+![SMB Brute Force](img/SMBClientAttack.png)
+
 ---
 
 ### 2. Successful Authentication After Failed Attempts
