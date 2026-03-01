@@ -25,6 +25,31 @@ The focus of this project was detection engineering and log analysis, generating
 ---
 
 ## Lab Architecture
+The lab environment was designed to simulate internal log collection and external attack activity across separate hosts.
+
+**Environment Components:**
+
+- **Windows 10 Enterprise VM**
+  - Sysmon installed and configured for enhanced telemetry
+  - Windows Security logs enabled
+  - Target system for attack simulation
+  - Log forwarder sending data to Splunk
+
+- **Linux Slingshot VM**
+  - Used to simulate external attack activity
+  - Performed authentication attempts and network-based attacks against the Windows host
+
+- **Splunk Enterprise**
+  - Centralized log ingestion and analysis platform
+  - Ingested:
+    - Windows Security Event Logs
+    - Sysmon Operational Logs
+  - Used for detection development, correlation searches, and investigation
+
+**Network Configuration:**
+Both virtual machines operated within a NAT network to simulate segmented hosts while maintaining internet access. The Linux VM acted as an external threat source interacting with the Windows system over SMB, RDP, and other network services.
+
+This architecture allowed for realistic multi-event attack simulation and end-to-end detection validation within Splunk.
 
 ---
 
