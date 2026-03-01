@@ -267,6 +267,7 @@ index=windows source="XmlWinEventLog:Security" (EventCode=4625 OR EventCode=4624
     by Account_Name, Source_Network_Address
 | where failed_attempts > 5 AND successful_logins > 0
 ```
+![Splunk Alert Result](img/Brute2success.png)
 
 ### 3. PowerShell Execution Detection (Event ID 4688)
 
